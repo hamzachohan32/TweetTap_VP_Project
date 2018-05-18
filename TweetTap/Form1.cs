@@ -50,7 +50,7 @@ namespace TweetTap
                     recievedData = (byte[])aResult.AsyncState;
                     ASCIIEncoding eEncoding = new ASCIIEncoding();
                     string recievedMessage = eEncoding.GetString(recievedData);
-                    listMessage.Items.Add("Friend:" + recievedMessage);
+                    Conversation.Items.Add("Friend:" + recievedMessage);
 
                 }
                 byte[] buffer = new byte[1500];
@@ -88,6 +88,26 @@ namespace TweetTap
 
         }
 
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
             try
@@ -96,7 +116,7 @@ namespace TweetTap
                 byte[] msg = new byte[1500];
                 msg = enc.GetBytes(textMessage.Text);
                 sck.Send(msg);
-                listMessage.Items.Add("You:" + textMessage.Text);
+                Conversation.Items.Add("You:" + textMessage.Text);
                 textMessage.Clear();
 
             }
