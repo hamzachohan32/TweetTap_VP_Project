@@ -1,0 +1,10 @@
+C:\Users\Hamza\source\repos\TweetTap\TweetTap\bin\Debug\TweetTap.exe.config
+C:\Users\Hamza\source\repos\TweetTap\TweetTap\bin\Debug\TweetTap.exe
+C:\Users\Hamza\source\repos\TweetTap\TweetTap\bin\Debug\TweetTap.pdb
+C:\Users\Hamza\source\repos\TweetTap\TweetTap\obj\Debug\TweetTap.csprojResolveAssemblyReference.cache
+C:\Users\Hamza\source\repos\TweetTap\TweetTap\obj\Debug\TweetTap.Form1.resources
+C:\Users\Hamza\source\repos\TweetTap\TweetTap\obj\Debug\TweetTap.Properties.Resources.resources
+C:\Users\Hamza\source\repos\TweetTap\TweetTap\obj\Debug\TweetTap.csproj.GenerateResource.cache
+C:\Users\Hamza\source\repos\TweetTap\TweetTap\obj\Debug\TweetTap.csproj.CoreCompileInputs.cache
+C:\Users\Hamza\source\repos\TweetTap\TweetTap\obj\Debug\TweetTap.exe
+C:\Users\Hamza\source\repos\TweetTap\TweetTap\obj\Debug\TweetTap.pdb
