@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
 using System.Net.Sockets;
-
+using ClassLibrary1;
+using System.IO;
 
 namespace TweetTap
 {
@@ -76,6 +77,7 @@ namespace TweetTap
                 buttonConnect.Enabled = false;
                 Send.Enabled = true;
                 textMessage.Focus();
+               
             }
             catch (Exception ex)
             {
@@ -108,16 +110,26 @@ namespace TweetTap
 
         }
 
+        private void textMessage_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
             try
             {
-                System.Text.ASCIIEncoding enc = new System.Text.ASCIIEncoding();
-                byte[] msg = new byte[1500];
-                msg = enc.GetBytes(textMessage.Text);
-                sck.Send(msg);
-                Conversation.Items.Add("You:" + textMessage.Text);
-                textMessage.Clear();
+                StreamWriter writer = new StreamWriter(@"C:\Users\Hamza\Desktop\MessageInput.txt");
+                writer.AutoFlush = true;
+                writer.WriteLine(textMessage.Text.ToString());
+                writer.Close();
+                System.Diagnostics.Process.Start(@"C:\Users\Hamza\source\repos\KeyPhraseExtraction\KeyPhraseExtraction\bin\Debug\KeyPhraseExtraction");
+                System.Threading.Thread.Sleep(5000);
+                StreamReader reader = new StreamReader(@"C:\Users\Hamza\Desktop\MessageOutput.txt");
+                string line = reader.ReadLine();
+                reader.Close();
+               
+                MessageBox.Show(line);
 
             }
             catch(Exception ex)

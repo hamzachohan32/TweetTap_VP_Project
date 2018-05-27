@@ -19,6 +19,7 @@ namespace TweetTap
     {
         Socket sck;
         EndPoint epLocal, epOther;
+        
         public Form1()
         {
             InitializeComponent();
@@ -26,10 +27,12 @@ namespace TweetTap
             sck.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReuseAddress, true);
             textLocalIP.Text = getlocalIP();
             textRemoteIP.Text = getlocalIP();
-
+            
+            
         }
         private String getlocalIP()
         {
+            
             IPHostEntry host;
             host = Dns.GetHostEntry(Dns.GetHostName());
             foreach(IPAddress ip in host.AddressList)

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetTap", "TweetTap\TweetTap.csproj", "{BF7CEB38-8CC4-4202-9A54-46B6CF91CD7F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetTap", "TweetTap.csproj", "{BF7CEB38-8CC4-4202-9A54-46B6CF91CD7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {1419C032-C211-4FD3-AC2C-5C60C2F8E80F}
+		SolutionGuid = {5278098A-5F06-4392-BB96-0620BCF8BBD5}
 	EndGlobalSection
 EndGlobal
