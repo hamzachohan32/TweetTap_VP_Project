@@ -10,7 +10,6 @@ C:\Users\Hamza\source\repos\TweetTap\TweetTap\obj\Debug\TweetTap.pdb
 C:\Users\Hamza\source\repos\TweetTap_VP_Project\TweetTap\bin\Debug\TweetTap.exe.config
 C:\Users\Hamza\source\repos\TweetTap_VP_Project\TweetTap\bin\Debug\TweetTap.exe
 C:\Users\Hamza\source\repos\TweetTap_VP_Project\TweetTap\bin\Debug\TweetTap.pdb
-C:\Users\Hamza\source\repos\TweetTap_VP_Project\TweetTap\obj\Debug\TweetTap.csprojResolveAssemblyReference.cache
 C:\Users\Hamza\source\repos\TweetTap_VP_Project\TweetTap\obj\Debug\TweetTap.Properties.Resources.resources
 C:\Users\Hamza\source\repos\TweetTap_VP_Project\TweetTap\obj\Debug\TweetTap.csproj.GenerateResource.cache
 C:\Users\Hamza\source\repos\TweetTap_VP_Project\TweetTap\obj\Debug\TweetTap.csproj.CoreCompileInputs.cache
@@ -25,11 +24,10 @@ C:\Users\Hamza\source\repos\TweetTap_VP_Project\TweetTap\bin\Debug\Microsoft.Res
 C:\Users\Hamza\source\repos\TweetTap_VP_Project\TweetTap\bin\Debug\Microsoft.Rest.ClientRuntime.Azure.xml
 C:\Users\Hamza\source\repos\TweetTap_VP_Project\TweetTap\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Hamza\source\repos\TweetTap_VP_Project\TweetTap\obj\Debug\TweetTap.csproj.CopyComplete
-C:\Users\Hamza\source\repos\TweetTap_VP_Project\TweetTap\obj\Debug\TweetTap.Form1.resources
 C:\Users\Hamza\source\repos\TweetTap_VP_Project\TweetTap\bin\Debug\System.Net.Http.dll
 C:\Users\Hamza\source\repos\TweetTap_VP_Project\TweetTap\bin\Debug\System.Security.Cryptography.Algorithms.dll
 C:\Users\Hamza\source\repos\TweetTap_VP_Project\TweetTap\bin\Debug\System.Security.Cryptography.Encoding.dll
 C:\Users\Hamza\source\repos\TweetTap_VP_Project\TweetTap\bin\Debug\System.Security.Cryptography.Primitives.dll
 C:\Users\Hamza\source\repos\TweetTap_VP_Project\TweetTap\bin\Debug\System.Security.Cryptography.X509Certificates.dll
-C:\Users\Hamza\source\repos\TweetTap_VP_Project\TweetTap\bin\Debug\ClassLibrary1.dll
-C:\Users\Hamza\source\repos\TweetTap_VP_Project\TweetTap\bin\Debug\ClassLibrary1.pdb
+C:\Users\Hamza\source\repos\TweetTap_VP_Project\TweetTap\obj\Debug\TweetTap.TweetTap.resources
+C:\Users\Hamza\source\repos\TweetTap_VP_Project\TweetTap\obj\Debug\TweetTap.csprojResolveAssemblyReference.cache

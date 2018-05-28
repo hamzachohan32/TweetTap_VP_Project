@@ -1,6 +1,6 @@
 ﻿namespace TweetTap
 {
-    partial class Form1
+    partial class TweetTap
     {
         /// <summary>
         /// Required designer variable.
@@ -28,40 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TweetTap));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textLocalPort = new System.Windows.Forms.TextBox();
-            this.textLocalIP = new System.Windows.Forms.TextBox();
+            this.LocalPort = new System.Windows.Forms.TextBox();
+            this.LocalIP = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textRemotePort = new System.Windows.Forms.TextBox();
-            this.textRemoteIP = new System.Windows.Forms.TextBox();
-            this.buttonConnect = new System.Windows.Forms.Button();
-            this.Conversation = new System.Windows.Forms.ListBox();
+            this.RemotePort = new System.Windows.Forms.TextBox();
+            this.RemoteIP = new System.Windows.Forms.TextBox();
+            this.SubmitIP_Port = new System.Windows.Forms.Button();
+            this.ConversationBox = new System.Windows.Forms.ListBox();
             this.textMessage = new System.Windows.Forms.TextBox();
-            this.Send = new System.Windows.Forms.Button();
-            this.Close = new System.Windows.Forms.Button();
+            this.SendMessage = new System.Windows.Forms.Button();
+            this.CloseButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.MinimizeButton = new System.Windows.Forms.Button();
+            this.TweetTapLog = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TweetTapLog)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textLocalPort);
-            this.groupBox1.Controls.Add(this.textLocalIP);
+            this.groupBox1.Controls.Add(this.LocalPort);
+            this.groupBox1.Controls.Add(this.LocalIP);
             this.groupBox1.Location = new System.Drawing.Point(101, 148);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(233, 98);
@@ -87,32 +87,32 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "IP";
             // 
-            // textLocalPort
+            // LocalPort
             // 
-            this.textLocalPort.BackColor = System.Drawing.SystemColors.Info;
-            this.textLocalPort.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textLocalPort.Location = new System.Drawing.Point(100, 66);
-            this.textLocalPort.Name = "textLocalPort";
-            this.textLocalPort.Size = new System.Drawing.Size(116, 20);
-            this.textLocalPort.TabIndex = 1;
-            this.textLocalPort.TextChanged += new System.EventHandler(this.PortUser1_TextChanged);
+            this.LocalPort.BackColor = System.Drawing.SystemColors.Info;
+            this.LocalPort.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LocalPort.Location = new System.Drawing.Point(100, 66);
+            this.LocalPort.Name = "LocalPort";
+            this.LocalPort.Size = new System.Drawing.Size(116, 20);
+            this.LocalPort.TabIndex = 1;
+            this.LocalPort.TextChanged += new System.EventHandler(this.PortUser1_TextChanged);
             // 
-            // textLocalIP
+            // LocalIP
             // 
-            this.textLocalIP.BackColor = System.Drawing.SystemColors.Info;
-            this.textLocalIP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textLocalIP.Location = new System.Drawing.Point(81, 21);
-            this.textLocalIP.Name = "textLocalIP";
-            this.textLocalIP.Size = new System.Drawing.Size(136, 20);
-            this.textLocalIP.TabIndex = 0;
+            this.LocalIP.BackColor = System.Drawing.SystemColors.Info;
+            this.LocalIP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LocalIP.Location = new System.Drawing.Point(81, 21);
+            this.LocalIP.Name = "LocalIP";
+            this.LocalIP.Size = new System.Drawing.Size(136, 20);
+            this.LocalIP.TabIndex = 0;
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.Window;
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.textRemotePort);
-            this.groupBox2.Controls.Add(this.textRemoteIP);
+            this.groupBox2.Controls.Add(this.RemotePort);
+            this.groupBox2.Controls.Add(this.RemoteIP);
             this.groupBox2.Location = new System.Drawing.Point(397, 148);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(262, 98);
@@ -138,44 +138,44 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "IP";
             // 
-            // textRemotePort
+            // RemotePort
             // 
-            this.textRemotePort.BackColor = System.Drawing.SystemColors.Info;
-            this.textRemotePort.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textRemotePort.Location = new System.Drawing.Point(109, 59);
-            this.textRemotePort.Name = "textRemotePort";
-            this.textRemotePort.Size = new System.Drawing.Size(128, 20);
-            this.textRemotePort.TabIndex = 1;
+            this.RemotePort.BackColor = System.Drawing.SystemColors.Info;
+            this.RemotePort.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RemotePort.Location = new System.Drawing.Point(109, 59);
+            this.RemotePort.Name = "RemotePort";
+            this.RemotePort.Size = new System.Drawing.Size(128, 20);
+            this.RemotePort.TabIndex = 1;
             // 
-            // textRemoteIP
+            // RemoteIP
             // 
-            this.textRemoteIP.BackColor = System.Drawing.SystemColors.Info;
-            this.textRemoteIP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textRemoteIP.Location = new System.Drawing.Point(87, 20);
-            this.textRemoteIP.Name = "textRemoteIP";
-            this.textRemoteIP.Size = new System.Drawing.Size(151, 20);
-            this.textRemoteIP.TabIndex = 0;
+            this.RemoteIP.BackColor = System.Drawing.SystemColors.Info;
+            this.RemoteIP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RemoteIP.Location = new System.Drawing.Point(87, 20);
+            this.RemoteIP.Name = "RemoteIP";
+            this.RemoteIP.Size = new System.Drawing.Size(151, 20);
+            this.RemoteIP.TabIndex = 0;
             // 
-            // buttonConnect
+            // SubmitIP_Port
             // 
-            this.buttonConnect.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonConnect.Location = new System.Drawing.Point(683, 192);
-            this.buttonConnect.Name = "buttonConnect";
-            this.buttonConnect.Size = new System.Drawing.Size(93, 31);
-            this.buttonConnect.TabIndex = 2;
-            this.buttonConnect.Text = "Submit";
-            this.buttonConnect.UseVisualStyleBackColor = true;
-            this.buttonConnect.Click += new System.EventHandler(this.button1_Click);
+            this.SubmitIP_Port.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.SubmitIP_Port.Location = new System.Drawing.Point(683, 192);
+            this.SubmitIP_Port.Name = "SubmitIP_Port";
+            this.SubmitIP_Port.Size = new System.Drawing.Size(93, 31);
+            this.SubmitIP_Port.TabIndex = 2;
+            this.SubmitIP_Port.Text = "Submit";
+            this.SubmitIP_Port.UseVisualStyleBackColor = true;
+            this.SubmitIP_Port.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Conversation
+            // ConversationBox
             // 
-            this.Conversation.BackColor = System.Drawing.SystemColors.Info;
-            this.Conversation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Conversation.FormattingEnabled = true;
-            this.Conversation.Location = new System.Drawing.Point(100, 294);
-            this.Conversation.Name = "Conversation";
-            this.Conversation.Size = new System.Drawing.Size(559, 197);
-            this.Conversation.TabIndex = 3;
+            this.ConversationBox.BackColor = System.Drawing.SystemColors.Info;
+            this.ConversationBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ConversationBox.FormattingEnabled = true;
+            this.ConversationBox.Location = new System.Drawing.Point(100, 294);
+            this.ConversationBox.Name = "ConversationBox";
+            this.ConversationBox.Size = new System.Drawing.Size(559, 197);
+            this.ConversationBox.TabIndex = 3;
             // 
             // textMessage
             // 
@@ -187,34 +187,34 @@
             this.textMessage.TabIndex = 4;
             this.textMessage.TextChanged += new System.EventHandler(this.textMessage_TextChanged);
             // 
-            // Send
+            // SendMessage
             // 
-            this.Send.Location = new System.Drawing.Point(683, 505);
-            this.Send.Name = "Send";
-            this.Send.Size = new System.Drawing.Size(93, 26);
-            this.Send.TabIndex = 5;
-            this.Send.Text = "Send";
-            this.Send.UseVisualStyleBackColor = true;
-            this.Send.Click += new System.EventHandler(this.button2_Click);
+            this.SendMessage.Location = new System.Drawing.Point(683, 505);
+            this.SendMessage.Name = "SendMessage";
+            this.SendMessage.Size = new System.Drawing.Size(93, 26);
+            this.SendMessage.TabIndex = 5;
+            this.SendMessage.Text = "Send";
+            this.SendMessage.UseVisualStyleBackColor = true;
+            this.SendMessage.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Close
+            // CloseButton
             // 
-            this.Close.Image = ((System.Drawing.Image)(resources.GetObject("Close.Image")));
-            this.Close.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.Close.Location = new System.Drawing.Point(763, 0);
-            this.Close.Name = "Close";
-            this.Close.Size = new System.Drawing.Size(37, 37);
-            this.Close.TabIndex = 6;
-            this.Close.UseVisualStyleBackColor = true;
-            this.Close.Click += new System.EventHandler(this.button1_Click_1);
+            this.CloseButton.Image = ((System.Drawing.Image)(resources.GetObject("CloseButton.Image")));
+            this.CloseButton.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.CloseButton.Location = new System.Drawing.Point(763, 0);
+            this.CloseButton.Name = "CloseButton";
+            this.CloseButton.Size = new System.Drawing.Size(37, 37);
+            this.CloseButton.TabIndex = 6;
+            this.CloseButton.UseVisualStyleBackColor = true;
+            this.CloseButton.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SeaGreen;
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.Close);
+            this.panel1.Controls.Add(this.MinimizeButton);
+            this.panel1.Controls.Add(this.CloseButton);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -244,43 +244,49 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // MinimizeButton
             // 
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.button1.Location = new System.Drawing.Point(727, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(37, 37);
-            this.button1.TabIndex = 7;
-            this.button1.UseVisualStyleBackColor = true;
+            this.MinimizeButton.Image = ((System.Drawing.Image)(resources.GetObject("MinimizeButton.Image")));
+            this.MinimizeButton.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.MinimizeButton.Location = new System.Drawing.Point(727, 0);
+            this.MinimizeButton.Name = "MinimizeButton";
+            this.MinimizeButton.Size = new System.Drawing.Size(37, 37);
+            this.MinimizeButton.TabIndex = 7;
+            this.MinimizeButton.UseVisualStyleBackColor = true;
+            this.MinimizeButton.Click += new System.EventHandler(this.button1_Click_3);
             // 
-            // pictureBox2
+            // TweetTapLog
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(323, 55);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(89, 87);
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
+            this.TweetTapLog.Image = ((System.Drawing.Image)(resources.GetObject("TweetTapLog.Image")));
+            this.TweetTapLog.Location = new System.Drawing.Point(323, 55);
+            this.TweetTapLog.Name = "TweetTapLog";
+            this.TweetTapLog.Size = new System.Drawing.Size(89, 87);
+            this.TweetTapLog.TabIndex = 8;
+            this.TweetTapLog.TabStop = false;
             // 
-            // Form1
+            // TweetTap
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(800, 554);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.TweetTapLog);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.Send);
+            this.Controls.Add(this.SendMessage);
             this.Controls.Add(this.textMessage);
-            this.Controls.Add(this.Conversation);
-            this.Controls.Add(this.buttonConnect);
+            this.Controls.Add(this.ConversationBox);
+            this.Controls.Add(this.SubmitIP_Port);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.KeyPreview = true;
+            this.Name = "TweetTap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TweetTap";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TweetTap_KeyDown);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TweetTap_MouseDown);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -288,7 +294,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TweetTapLog)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -299,23 +305,23 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textLocalPort;
-        private System.Windows.Forms.TextBox textLocalIP;
+        private System.Windows.Forms.TextBox LocalPort;
+        private System.Windows.Forms.TextBox LocalIP;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textRemotePort;
-        private System.Windows.Forms.TextBox textRemoteIP;
-        private System.Windows.Forms.Button buttonConnect;
-        private System.Windows.Forms.ListBox Conversation;
+        private System.Windows.Forms.TextBox RemotePort;
+        private System.Windows.Forms.TextBox RemoteIP;
+        private System.Windows.Forms.Button SubmitIP_Port;
+        private System.Windows.Forms.ListBox ConversationBox;
         private System.Windows.Forms.TextBox textMessage;
-        private System.Windows.Forms.Button Send;
-        private System.Windows.Forms.Button Close;
+        private System.Windows.Forms.Button SendMessage;
+        private System.Windows.Forms.Button CloseButton;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button MinimizeButton;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox TweetTapLog;
     }
 }
 
